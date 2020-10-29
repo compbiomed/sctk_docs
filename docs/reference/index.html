@@ -8,21 +8,29 @@
 
 <title>Function reference • singleCellTK</title>
 
-<!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
-<!-- sticky kit -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+<!-- headroom.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -30,7 +38,9 @@
 
 
 
+
 <meta property="og:title" content="Function reference" />
+
 
 
 
@@ -44,9 +54,10 @@
 <![endif]-->
 
 
+
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-index">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -60,44 +71,14 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">singleCellTK</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.5.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.9.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../articles/v01-Introduction_to_singleCellTK.html">Introduction to singleCellTK</a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Interactive Shiny Analysis
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="../articles/v03-tab01_Upload.html">1: Upload</a>
-    </li>
-    <li>
-      <a href="../articles/v04-tab02_Data-Summary-and-Filtering.html">2: Data Summary and Filtering</a>
-    </li>
-    <li>
-      <a href="../articles/v05-tab03_Visualization-and-Clustering.html">3: Visualization and Clustering</a>
-    </li>
-    <li>
-      <a href="../articles/v06-tab04_Batch-Correction.html">4: Batch Correction</a>
-    </li>
-    <li>
-      <a href="../articles/v07-tab05_Differential-Expression.html">5: Differential Expression</a>
-    </li>
-    <li>
-      <a href="../articles/v08-tab06_Pathway-Activity-Analysis.html">6: Pathway Activity Analysis</a>
-    </li>
-    <li>
-      <a href="../articles/v09-tab07_Sample-Size.html">7: Sample Size</a>
-    </li>
-  </ul>
+  <a href="../articles/introduction_to_SCTK.html">Introduction to SingleCellToolKit</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -107,10 +88,28 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/v02-Processing_and_Visualizing_Data_in_the_SingleCellTK.html">Processing and Visualizing Data</a>
+      <a href="../articles/import_scRNAseq_data_as_SCE.html">Import data into SCTK</a>
     </li>
     <li>
-      <a href="../articles/v10-Aligning_and_Quantifying_scRNA-Seq_Data.html">Aligning and Quantifying scRNA-Seq Data</a>
+      <a href="../articles/run_qc.html">Quality Control</a>
+    </li>
+    <li>
+      <a href="../articles/normalization.html">Normalization</a>
+    </li>
+    <li>
+      <a href="../articles/batch_correction.html">Batch Correction</a>
+    </li>
+    <li>
+      <a href="../articles/variability.html">Variability</a>
+    </li>
+    <li>
+      <a href="../articles/feature_selection.html">Feature Selection</a>
+    </li>
+    <li>
+      <a href="../articles/differential_expression.html">Differential Expression</a>
+    </li>
+    <li>
+      <a href="../articles/visualize_results.html">Visualize Results</a>
     </li>
   </ul>
 </li>
@@ -118,7 +117,6 @@
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/compbiomed/singleCellTK">
@@ -133,6 +131,7 @@
 </div><!--/.navbar -->
 
       
+
       </header>
 
 <div class="row">
@@ -152,102 +151,350 @@
     <tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-shiny-app" class="hasAnchor"><a href="#section-shiny-app" class="anchor"></a>Shiny App</h2>
+          <h2 id="section-importing-scrna-seq-data" class="hasAnchor"><a href="#section-importing-scrna-seq-data" class="anchor"></a>Importing scRNA-seq data</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="singleCellTK.html">singleCellTK()</a></code> </p>
+          <p><code><a href="importBUStools.html">importBUStools()</a></code> </p>
         </td>
-        <td><p>Run the single cell analysis app</p></td>
+        <td><p>Construct SCE object from BUStools output</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importCellRanger.html">importCellRanger()</a></code> <code><a href="importCellRanger.html">importCellRangerV2()</a></code> <code><a href="importCellRanger.html">importCellRangerV3()</a></code> </p>
+        </td>
+        <td><p>Construct SCE object from Cell Ranger output</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importCellRangerV2Sample.html">importCellRangerV2Sample()</a></code> </p>
+        </td>
+        <td><p>Construct SCE object from Cell Ranger V2 output for a single sample</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importCellRangerV3Sample.html">importCellRangerV3Sample()</a></code> </p>
+        </td>
+        <td><p>Construct SCE object from Cell Ranger V3 output for a single sample</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importDropEst.html">importDropEst()</a></code> </p>
+        </td>
+        <td><p>Create a SingleCellExperiment Object from DropEst output</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importExampleData.html">importExampleData()</a></code> </p>
+        </td>
+        <td><p>Retrieve example datasets</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importFromFiles.html">importFromFiles()</a></code> </p>
+        </td>
+        <td><p>Create a SingleCellExperiment object from files</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importGeneSetsFromCollection.html">importGeneSetsFromCollection()</a></code> </p>
+        </td>
+        <td><p>Imports gene sets from a GeneSetCollection object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importGeneSetsFromGMT.html">importGeneSetsFromGMT()</a></code> </p>
+        </td>
+        <td><p>Imports gene sets from a GMT file</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importGeneSetsFromList.html">importGeneSetsFromList()</a></code> </p>
+        </td>
+        <td><p>Imports gene sets from a list</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importGeneSetsFromMSigDB.html">importGeneSetsFromMSigDB()</a></code> </p>
+        </td>
+        <td><p>Imports gene sets from MSigDB</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importOptimus.html">importOptimus()</a></code> </p>
+        </td>
+        <td><p>Construct SCE object from Optimus output</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importSEQC.html">importSEQC()</a></code> </p>
+        </td>
+        <td><p>Construct SCE object from seqc output</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="importSTARsolo.html">importSTARsolo()</a></code> </p>
+        </td>
+        <td><p>Construct SCE object from STARsolo outputs</p></td>
       </tr>
     </tbody><tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-data-summary-and-filtering" class="hasAnchor"><a href="#section-data-summary-and-filtering" class="anchor"></a>Data Summary and Filtering</h2>
+          <h2 id="section-quality-control-preprocessing" class="hasAnchor"><a href="#section-quality-control-preprocessing" class="anchor"></a>Quality Control &amp; Preprocessing</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="filterSCData.html">filterSCData()</a></code> </p>
+          <p><code><a href="runCellQC.html">runCellQC()</a></code> </p>
         </td>
-        <td><p>Filter Genes and Samples from a Single Cell Object</p></td>
+        <td><p>Perform comprehensive single cell QC</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="summarizeTable.html">summarizeTable()</a></code> </p>
+          <p><code><a href="runDropletQC.html">runDropletQC()</a></code> </p>
         </td>
-        <td><p>Summarize SCtkExperiment</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="convertGeneIDs.html">convertGeneIDs()</a></code> </p>
-        </td>
-        <td><p>Convert Gene IDs</p></td>
+        <td><p>Perform comprehensive droplet QC</p></td>
       </tr>
     </tbody><tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-dimensionality-reduction-and-clustering" class="hasAnchor"><a href="#section-dimensionality-reduction-and-clustering" class="anchor"></a>Dimensionality Reduction and Clustering</h2>
+          <h2 id="section-doublet-empty-droplet-detection" class="hasAnchor"><a href="#section-doublet-empty-droplet-detection" class="anchor"></a>Doublet/Empty Droplet Detection</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="getPCA.html">getPCA()</a></code> </p>
+          <p><code><a href="runBarcodeRankDrops.html">runBarcodeRankDrops()</a></code> </p>
         </td>
-        <td><p>Get and plot PCA components for a SCtkE object</p></td>
+        <td><p>Identify empty droplets using <a href='https://rdrr.io/pkg/DropletUtils/man/barcodeRanks.html'>barcodeRanks</a>.</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="getTSNE.html">getTSNE()</a></code> </p>
+          <p><code><a href="runEmptyDrops.html">runEmptyDrops()</a></code> </p>
         </td>
-        <td><p>Run t-SNE dimensionality reduction method on the assay data.</p></td>
+        <td><p>Identify empty droplets using <a href='https://rdrr.io/pkg/DropletUtils/man/emptyDrops.html'>emptyDrops</a>.</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="getBiomarker.html">getBiomarker()</a></code> </p>
+          <p><code><a href="runBcds.html">runBcds()</a></code> </p>
         </td>
-        <td><p>Given a list of genes and a SCtkExperiment object, return
-the binary or continuous expression of the genes.</p></td>
+        <td><p>Find doublets/multiplets using <a href='https://rdrr.io/pkg/scds/man/bcds.html'>bcds</a>.</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="getClusterInputData.html">getClusterInputData()</a></code> </p>
+          <p><code><a href="runCxds.html">runCxds()</a></code> </p>
         </td>
-        <td><p>Get data to use as input clustering algorithms</p></td>
+        <td><p>Find doublets/multiplets using <a href='https://rdrr.io/pkg/scds/man/cxds.html'>cxds</a>.</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="plotBiomarker.html">plotBiomarker()</a></code> </p>
+          <p><code><a href="runCxdsBcdsHybrid.html">runCxdsBcdsHybrid()</a></code> </p>
         </td>
-        <td><p>Given a set of genes, return a ggplot of expression
-values.</p></td>
+        <td><p>Find doublets/multiplets using <a href='https://rdrr.io/pkg/scds/man/cxds_bcds_hybrid.html'>cxds_bcds_hybrid</a>.</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="plotPCA.html">plotPCA()</a></code> </p>
+          <p><code><a href="runDoubletCells.html">runDoubletCells()</a></code> </p>
         </td>
-        <td><p>Plot PCA run data from its components.</p></td>
+        <td><p>Detect doublet cells using <a href='https://rdrr.io/pkg/scran/man/doubletCells.html'>doubletCells</a>.</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="plotTSNE.html">plotTSNE()</a></code> </p>
+          <p><code><a href="runDoubletFinder.html">runDoubletFinder()</a></code> </p>
         </td>
-        <td><p>Plot t-SNE plot on dimensionality reduction data run from t-SNE method.</p></td>
+        <td><p>Generates a doublet score for each cell via doubletFinder</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runScrublet.html">runScrublet()</a></code> </p>
+        </td>
+        <td><p>Find doublets using <code>scrublet</code>.</p></td>
       </tr>
     </tbody><tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-batch-correction" class="hasAnchor"><a href="#section-batch-correction" class="anchor"></a>Batch Correction</h2>
+          <h2 id="section-batch-effect-correction" class="hasAnchor"><a href="#section-batch-effect-correction" class="anchor"></a>Batch Effect Correction</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="runBBKNN.html">runBBKNN()</a></code> </p>
+        </td>
+        <td><p>Apply BBKNN batch effect correction method to SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runComBat.html">runComBat()</a></code> </p>
+        </td>
+        <td><p>Apply ComBat batch effect correction method to SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runFastMNN.html">runFastMNN()</a></code> </p>
+        </td>
+        <td><p>Apply a fast version of the mutual nearest neighbors (MNN) batch effect
+correction method to SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runHarmony.html">runHarmony()</a></code> </p>
+        </td>
+        <td><p>Apply Harmony batch effect correction method to SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runLIGER.html">runLIGER()</a></code> </p>
+        </td>
+        <td><p>Apply LIGER batch effect correction method to SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runLimmaBC.html">runLimmaBC()</a></code> </p>
+        </td>
+        <td><p>Apply Limma's batch effect correction method to SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runMNNCorrect.html">runMNNCorrect()</a></code> </p>
+        </td>
+        <td><p>Apply the mutual nearest neighbors (MNN) batch effect correction method to
+SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runSCANORAMA.html">runSCANORAMA()</a></code> </p>
+        </td>
+        <td><p>Apply the mutual nearest neighbors (MNN) batch effect correction method to
+SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runSCGEN.html">runSCGEN()</a></code> </p>
+        </td>
+        <td><p>Apply scGen batch effect correction method to SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runSCMerge.html">runSCMerge()</a></code> </p>
+        </td>
+        <td><p>Apply scMerge batch effect correction method to SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runSeurat3Integration.html">runSeurat3Integration()</a></code> </p>
+        </td>
+        <td><p>Apply Integration batch effect correction method from Seurat v3 to
+SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runZINBWaVE.html">runZINBWaVE()</a></code> </p>
+        </td>
+        <td><p>Apply ZINBWaVE Batch effect correction method to SingleCellExperiment object</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-decontamination" class="hasAnchor"><a href="#section-decontamination" class="anchor"></a>Decontamination</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="runDecontX.html">runDecontX()</a></code> </p>
+        </td>
+        <td><p>Detecting contamination with DecontX.</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-differential-expression" class="hasAnchor"><a href="#section-differential-expression" class="anchor"></a>Differential Expression</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="runDEAnalysis.html">runDEAnalysis()</a></code> </p>
+        </td>
+        <td><p>Perform differential expression analysis on SCE with specified method
+Method supported: 'MAST', 'DESeq2', 'Limma', 'ANOVA'</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runMAST.html">runMAST()</a></code> </p>
+        </td>
+        <td><p>Perform differential expression analysis on SCE with MAST</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runDESeq2.html">runDESeq2()</a></code> </p>
+        </td>
+        <td><p>Perform differential expression analysis on SCE with DESeq2.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runLimmaDE.html">runLimmaDE()</a></code> </p>
+        </td>
+        <td><p>Perform differential expression analysis on SCE with Limma.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="runANOVA.html">runANOVA()</a></code> </p>
+        </td>
+        <td><p>Perform differential expression analysis on SCE with ANOVA</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-visualization" class="hasAnchor"><a href="#section-visualization" class="anchor"></a>Visualization</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -258,208 +505,247 @@ in the data</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="ComBatSCE.html">ComBatSCE()</a></code> </p>
+          <p><code><a href="plotBcdsResults.html">plotBcdsResults()</a></code> </p>
         </td>
-        <td><p>ComBatSCE</p></td>
+        <td><p>Plots for runBcds outputs.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotBiomarker.html">plotBiomarker()</a></code> </p>
+        </td>
+        <td><p>Given a set of genes, return a ggplot of expression
+values.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotCxdsResults.html">plotCxdsResults()</a></code> </p>
+        </td>
+        <td><p>Plots for runCxds outputs.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotDecontXResults.html">plotDecontXResults()</a></code> </p>
+        </td>
+        <td><p>Plots for runDecontX outputs.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotDEGHeatmap.html">plotDEGHeatmap()</a></code> </p>
+        </td>
+        <td><p>Heatmap visualization of DEG result</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotDEGRegression.html">plotDEGRegression()</a></code> </p>
+        </td>
+        <td><p>plot the linear regression to show visualize the expression the of DEGs
+identified by differential expression analysis</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotDEGViolin.html">plotDEGViolin()</a></code> </p>
+        </td>
+        <td><p>plot the violin plot to show visualize the expression distribution of DEGs
+identified by differential expression analysis</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotDimRed.html">plotDimRed()</a></code> </p>
+        </td>
+        <td><p>Plot results either on already run results of reduced dimensions data.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotDoubletCellsResults.html">plotDoubletCellsResults()</a></code> </p>
+        </td>
+        <td><p>Plots for runDoubletCells outputs.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotDoubletFinderResults.html">plotDoubletFinderResults()</a></code> </p>
+        </td>
+        <td><p>Plots for runDoubletFinder outputs.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotMarkerDiffExp.html">plotMarkerDiffExp()</a></code> </p>
+        </td>
+        <td><p>Plot a heatmap to visualize the result of <code>findMarkerDiffExp</code></p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotPCA.html">plotPCA()</a></code> </p>
+        </td>
+        <td><p>Plot PCA run data from its components.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotRunPerCellQCResults.html">plotRunPerCellQCResults()</a></code> </p>
+        </td>
+        <td><p>Plots for runPerCellQC outputs.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotScdsHybridResults.html">plotScdsHybridResults()</a></code> </p>
+        </td>
+        <td><p>Plots for runCxdsBcdsHybrid outputs.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEBarAssayData.html">plotSCEBarAssayData()</a></code> </p>
+        </td>
+        <td><p>Bar plot of assay data.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEBarColData.html">plotSCEBarColData()</a></code> </p>
+        </td>
+        <td><p>Bar plot of colData.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEBatchFeatureMean.html">plotSCEBatchFeatureMean()</a></code> </p>
+        </td>
+        <td><p>Plot mean feature value in each batch of a SingleCellExperiment object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEDensity.html">plotSCEDensity()</a></code> </p>
+        </td>
+        <td><p>Density plot of any data stored in the SingleCellExperiment object.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEDensityAssayData.html">plotSCEDensityAssayData()</a></code> </p>
+        </td>
+        <td><p>Density plot of assay data.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEDensityColData.html">plotSCEDensityColData()</a></code> </p>
+        </td>
+        <td><p>Density plot of colData.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEDimReduceColData.html">plotSCEDimReduceColData()</a></code> </p>
+        </td>
+        <td><p>Dimension reduction plot tool for colData</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEDimReduceFeatures.html">plotSCEDimReduceFeatures()</a></code> </p>
+        </td>
+        <td><p>Dimension reduction plot tool for assay data</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEHeatmap.html">plotSCEHeatmap()</a></code> </p>
+        </td>
+        <td><p>Plot heatmap of using data stored in SingleCellExperiment Object</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEScatter.html">plotSCEScatter()</a></code> </p>
+        </td>
+        <td><p>Dimension reduction plot tool for all types of data</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEViolin.html">plotSCEViolin()</a></code> </p>
+        </td>
+        <td><p>Violin plot of any data stored in the SingleCellExperiment object.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEViolinAssayData.html">plotSCEViolinAssayData()</a></code> </p>
+        </td>
+        <td><p>Violin plot of assay data.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotSCEViolinColData.html">plotSCEViolinColData()</a></code> </p>
+        </td>
+        <td><p>Violin plot of colData.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotScrubletResults.html">plotScrubletResults()</a></code> </p>
+        </td>
+        <td><p>Plots for runScrublet outputs.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotTSNE.html">plotTSNE()</a></code> </p>
+        </td>
+        <td><p>Plot t-SNE plot on dimensionality reduction data run from t-SNE method.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plotUMAP.html">plotUMAP()</a></code> </p>
+        </td>
+        <td><p>Plot UMAP results either on already run results or run first and then plot.</p></td>
       </tr>
     </tbody><tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-differential-expression" class="hasAnchor"><a href="#section-differential-expression" class="anchor"></a>Differential Expression</h2>
+          <h2 id="section-exporting-results" class="hasAnchor"><a href="#section-exporting-results" class="anchor"></a>Exporting Results</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="scDiffEx.html">scDiffEx()</a></code> <code><a href="scDiffEx.html">scDiffExDESeq2()</a></code> <code><a href="scDiffEx.html">scDiffExlimma()</a></code> <code><a href="scDiffEx.html">scDiffExANOVA()</a></code> </p>
-        </td>
-        <td><p>Perform differential expression analysis on a SCtkExperiment object</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="plotDiffEx.html">plotDiffEx()</a></code> </p>
-        </td>
-        <td><p>Plot Differential Expression</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="MAST.html">MAST()</a></code> <code><a href="MAST.html">thresholdGenes()</a></code> <code><a href="MAST.html">MASTviolin()</a></code> <code><a href="MAST.html">MASTregression()</a></code> </p>
-        </td>
-        <td><p>MAST</p></td>
-      </tr>
+      
+      
     </tbody><tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-pathway-activity-analysis" class="hasAnchor"><a href="#section-pathway-activity-analysis" class="anchor"></a>Pathway Activity Analysis</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="gsvaSCE.html">gsvaSCE()</a></code> <code><a href="gsvaSCE.html">gsvaPlot()</a></code> </p>
+          <p><code><a href="exportSCE.html">exportSCE()</a></code> </p>
         </td>
-        <td><p>Run GSVA analysis on a SCtkExperiment object.</p></td>
-      </tr>
-    </tbody><tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-sample-size" class="hasAnchor"><a href="#section-sample-size" class="anchor"></a>Sample Size</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="calcEffectSizes.html">calcEffectSizes()</a></code> </p>
-        </td>
-        <td><p>Finds the effect sizes for all genes in the original dataset, regardless of
-significance.</p></td>
+        <td><p>Export data in SingleCellExperiment object</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="DownsampleCells.html">DownsampleCells()</a></code> </p>
+          <p><code><a href="exportSCEtoAnnData.html">exportSCEtoAnnData()</a></code> </p>
         </td>
-        <td><p>Estimate numbers of detected genes, significantly differentially expressed
-genes, and median significant effect size</p></td>
+        <td><p>Export a <a href='https://rdrr.io/pkg/SingleCellExperiment/man/SingleCellExperiment.html'>SingleCellExperiment</a> R object as 
+Python annData object</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="DownsampleDepth.html">DownsampleDepth()</a></code> </p>
+          <p><code><a href="exportSCEtoFlatFile.html">exportSCEtoFlatFile()</a></code> </p>
         </td>
-        <td><p>Estimate numbers of detected genes, significantly differentially expressed
-genes, and median significant effect size</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="generateSimulatedData.html">generateSimulatedData()</a></code> </p>
-        </td>
-        <td><p>Generates a single simulated dataset, bootstrapping from the input counts
-matrix.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="iterateSimulations.html">iterateSimulations()</a></code> </p>
-        </td>
-        <td><p>Returns significance data from a snapshot.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="subDiffEx.html">subDiffEx()</a></code> <code><a href="subDiffEx.html">subDiffExttest()</a></code> <code><a href="subDiffEx.html">subDiffExANOVA()</a></code> </p>
-        </td>
-        <td><p>Passes the output of generateSimulatedData() to differential expression
-tests, picking either t-tests or ANOVA for data with only two conditions or
-multiple conditions, respectively.</p></td>
-      </tr>
-    </tbody><tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-data" class="hasAnchor"><a href="#section-data" class="anchor"></a>Data</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="mouseBrainSubsetSCE.html">mouseBrainSubsetSCE</a></code> </p>
-        </td>
-        <td><p>Example Single Cell RNA-Seq data in SCtkExperiment Object, GSE60361
-subset</p></td>
-      </tr>
-    </tbody><tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-sctkexperiment" class="hasAnchor"><a href="#section-sctkexperiment" class="anchor"></a>SCtkExperiment</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="createSCE.html">createSCE()</a></code> </p>
-        </td>
-        <td><p>Create a SCtkExperiment object</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="SCtkExperiment-class.html">SCtkExperiment-class</a></code> </p>
-        </td>
-        <td><p>A lightweight S4 extension to the SingleCellExperiment class to store
-additional information.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="SCtkExperiment.html">SCtkExperiment()</a></code> </p>
-        </td>
-        <td><p>Create a SCtkExperiment</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="pcaVariances-set.html">`pcaVariances<-`()</a></code> </p>
-        </td>
-        <td><p>Set PCA variances</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="pcaVariances.html">pcaVariances()</a></code> <code><a href="pcaVariances.html">`pcaVariances<-`(<i>&lt;SCtkExperiment&gt;</i>)</a></code> </p>
-        </td>
-        <td><p>Get PCA variances</p></td>
-      </tr>
-    </tbody><tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-alignment" class="hasAnchor"><a href="#section-alignment" class="anchor"></a>Alignment</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="alignSingleCellData.html">alignSingleCellData()</a></code> </p>
-        </td>
-        <td><p>Align Single Cell RNA-Seq Data and Create a SCtkExperiment Object</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="parseRsubreadLogs.html">parseRsubreadLogs()</a></code> </p>
-        </td>
-        <td><p>Parse Rsubread Logs for Mapping and Feature Count Statistics</p></td>
+        <td><p>Export a <a href='https://rdrr.io/pkg/SingleCellExperiment/man/SingleCellExperiment.html'>SingleCellExperiment</a> object to flat text files</p></td>
       </tr>
     </tbody>
     </table>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-shiny-app">Shiny App</a></li>
-      <li><a href="#section-data-summary-and-filtering">Data Summary and Filtering</a></li>
-      <li><a href="#section-dimensionality-reduction-and-clustering">Dimensionality Reduction and Clustering</a></li>
-      <li><a href="#section-batch-correction">Batch Correction</a></li>
-      <li><a href="#section-differential-expression">Differential Expression</a></li>
-      <li><a href="#section-pathway-activity-analysis">Pathway Activity Analysis</a></li>
-      <li><a href="#section-sample-size">Sample Size</a></li>
-      <li><a href="#section-data">Data</a></li>
-      <li><a href="#section-sctkexperiment">SCtkExperiment</a></li>
-      <li><a href="#section-alignment">Alignment</a></li>
-    </ul>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
+
       <footer>
       <div class="copyright">
-  <p>Developed by David Jenkins, Tyler Faits, Mohammed Muzamil Khan, Emma Briars, Sebastian Carrasco Pro, W. Evan Johnson.</p>
+  <p>Developed by Joshua D. Campbell, David Jenkins, Tyler Faits, Mohammed Muzamil Khan, Zhe Wang, Emma Briars, Sebastian Carrasco Pro, W. Evan Johnson, Yusuke Koga, Shruthi Bandyadka, Anastasia Leshchyk, Rui Hong, Yichen Wang.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
+
       </footer>
    </div>
 
   
 
+
   </body>
 </html>
+
 

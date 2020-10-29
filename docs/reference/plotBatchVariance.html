@@ -9,21 +9,29 @@
 <title>Plot the percent of the variation that is explained by batch and condition
 in the data — plotBatchVariance • singleCellTK</title>
 
-<!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
-<!-- sticky kit -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+<!-- headroom.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -31,12 +39,12 @@ in the data — plotBatchVariance • singleCellTK</title>
 
 
 
+
 <meta property="og:title" content="Plot the percent of the variation that is explained by batch and condition
 in the data — plotBatchVariance" />
-
 <meta property="og:description" content="Visualize the percent variation in the data that is explained by batch and
 condition if it is given." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -50,9 +58,10 @@ condition if it is given." />
 <![endif]-->
 
 
+
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -66,44 +75,14 @@ condition if it is given." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">singleCellTK</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.5.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.9.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../articles/v01-Introduction_to_singleCellTK.html">Introduction to singleCellTK</a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Interactive Shiny Analysis
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="../articles/v03-tab01_Upload.html">1: Upload</a>
-    </li>
-    <li>
-      <a href="../articles/v04-tab02_Data-Summary-and-Filtering.html">2: Data Summary and Filtering</a>
-    </li>
-    <li>
-      <a href="../articles/v05-tab03_Visualization-and-Clustering.html">3: Visualization and Clustering</a>
-    </li>
-    <li>
-      <a href="../articles/v06-tab04_Batch-Correction.html">4: Batch Correction</a>
-    </li>
-    <li>
-      <a href="../articles/v07-tab05_Differential-Expression.html">5: Differential Expression</a>
-    </li>
-    <li>
-      <a href="../articles/v08-tab06_Pathway-Activity-Analysis.html">6: Pathway Activity Analysis</a>
-    </li>
-    <li>
-      <a href="../articles/v09-tab07_Sample-Size.html">7: Sample Size</a>
-    </li>
-  </ul>
+  <a href="../articles/introduction_to_SCTK.html">Introduction to SingleCellToolKit</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -113,10 +92,28 @@ condition if it is given." />
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/v02-Processing_and_Visualizing_Data_in_the_SingleCellTK.html">Processing and Visualizing Data</a>
+      <a href="../articles/import_scRNAseq_data_as_SCE.html">Import data into SCTK</a>
     </li>
     <li>
-      <a href="../articles/v10-Aligning_and_Quantifying_scRNA-Seq_Data.html">Aligning and Quantifying scRNA-Seq Data</a>
+      <a href="../articles/run_qc.html">Quality Control</a>
+    </li>
+    <li>
+      <a href="../articles/normalization.html">Normalization</a>
+    </li>
+    <li>
+      <a href="../articles/batch_correction.html">Batch Correction</a>
+    </li>
+    <li>
+      <a href="../articles/variability.html">Variability</a>
+    </li>
+    <li>
+      <a href="../articles/feature_selection.html">Feature Selection</a>
+    </li>
+    <li>
+      <a href="../articles/differential_expression.html">Differential Expression</a>
+    </li>
+    <li>
+      <a href="../articles/visualize_results.html">Visualize Results</a>
     </li>
   </ul>
 </li>
@@ -124,7 +121,6 @@ condition if it is given." />
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/compbiomed/singleCellTK">
@@ -139,6 +135,7 @@ condition if it is given." />
 </div><!--/.navbar -->
 
       
+
       </header>
 
 <div class="row">
@@ -146,20 +143,23 @@ condition if it is given." />
     <div class="page-header">
     <h1>Plot the percent of the variation that is explained by batch and condition
 in the data</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/compbiomed/singleCellTK/blob/master/R/plotBatchVariance.R'><code>R/plotBatchVariance.R</code></a></small>
     <div class="hidden name"><code>plotBatchVariance.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Visualize the percent variation in the data that is explained by batch and
 condition if it is given.</p>
-    
     </div>
 
-    <pre class="usage"><span class='fu'>plotBatchVariance</span>(<span class='no'>inSCE</span>, <span class='kw'>useAssay</span> <span class='kw'>=</span> <span class='st'>"logcounts"</span>, <span class='no'>batch</span>,
-  <span class='kw'>condition</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
-    
+    <pre class="usage"><span class='fu'>plotBatchVariance</span>(
+  <span class='no'>inSCE</span>,
+  <span class='kw'>useAssay</span> <span class='kw'>=</span> <span class='st'>"logcounts"</span>,
+  <span class='kw'>batch</span> <span class='kw'>=</span> <span class='st'>"batch"</span>,
+  <span class='kw'>condition</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>pcInput</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>
+)</pre>
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -181,49 +181,52 @@ Required</p></td>
       <td><p>The column in the annotation data that corresponds to
 condition. Optional</p></td>
     </tr>
+    <tr>
+      <th>pcInput</th>
+      <td><p>A logical scalar indicating whether <code>useAssay</code> is in
+<code><a href='https://rdrr.io/r/base/names.html'>names(reducedDims(inSCE))</a></code>. Default <code>FALSE</code>.</p></td>
+    </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A boxplot of variation explained by batch, condition, and
 batch+condition (if applicable).</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/ns-load'>requireNamespace</a></span>(<span class='st'>"bladderbatch"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>bladderbatch</span>)
-  <span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>bladderdata</span>)
-  <span class='no'>dat</span> <span class='kw'>&lt;-</span> <span class='fu'>as</span>(<span class='fu'>as</span>(<span class='no'>bladderEset</span>, <span class='st'>"SummarizedExperiment"</span>), <span class='st'>"SCtkExperiment"</span>)
-  <span class='fu'>plotBatchVariance</span>(<span class='no'>dat</span>, <span class='kw'>useAssay</span><span class='kw'>=</span><span class='st'>"exprs"</span>, <span class='kw'>batch</span><span class='kw'>=</span><span class='st'>"batch"</span>, <span class='kw'>condition</span> <span class='kw'>=</span> <span class='st'>"cancer"</span>)
-}</div><div class='img'><img src='plotBatchVariance-1.png' alt='' width='700' height='433' /></div><div class='input'>
-</div></pre>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+  <span class='kw'>if</span>(<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"bladderbatch"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
+    <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>bladderbatch</span>)
+    <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>bladderdata</span>)
+    <span class='no'>dat</span> <span class='kw'>&lt;-</span> <span class='fu'>as</span>(<span class='fu'>as</span>(<span class='no'>bladderEset</span>, <span class='st'>"SummarizedExperiment"</span>), <span class='st'>"SCtkExperiment"</span>)
+    <span class='fu'>plotBatchVariance</span>(<span class='no'>dat</span>, <span class='kw'>useAssay</span><span class='kw'>=</span><span class='st'>"exprs"</span>, <span class='kw'>batch</span><span class='kw'>=</span><span class='st'>"batch"</span>, <span class='kw'>condition</span> <span class='kw'>=</span> <span class='st'>"cancer"</span>)
+  }
+}</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
+
 
       <footer>
       <div class="copyright">
-  <p>Developed by David Jenkins, Tyler Faits, Mohammed Muzamil Khan, Emma Briars, Sebastian Carrasco Pro, W. Evan Johnson.</p>
+  <p>Developed by Joshua D. Campbell, David Jenkins, Tyler Faits, Mohammed Muzamil Khan, Zhe Wang, Emma Briars, Sebastian Carrasco Pro, W. Evan Johnson, Yusuke Koga, Shruthi Bandyadka, Anastasia Leshchyk, Rui Hong, Yichen Wang.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
+
       </footer>
    </div>
 
   
 
+
   </body>
 </html>
+
 
